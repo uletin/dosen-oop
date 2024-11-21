@@ -1,9 +1,11 @@
+import abstractionTwo.Entry;
+import abstractionTwo.Mid;
+
 public class Main {
     public static void main(String[] args) {
-        Food food = new Food();
-        food.setProducts("keripik", "rasa ayam panggang", 10000, "potabee", "hitam");
-        food.getInfo();
-        food.setExpired();
-        food.getExpired();
+        Entry entry = new Entry("Samsung A13", "Exynos", 8, 128, 5000);
+        Mid mid = new Mid("Samsung A13", "Exynos", 8, 128, 5000);
+
+        mid.getInfo("Samsung");
     }
 }
