@@ -1,11 +1,11 @@
-import abstractionTwo.Entry;
-import abstractionTwo.Mid;
+
+import interfaces.Manager;
 
 public class Main {
     public static void main(String[] args) {
-        Entry entry = new Entry("Samsung A13", "Exynos", 8, 128, 5000);
-        Mid mid = new Mid("Samsung A13", "Exynos", 8, 128, 5000);
+        Manager manager = new Manager();
 
-        mid.getInfo("Samsung");
+        manager.getInformation();
+        manager.getTakehomepay();
     }
 }
